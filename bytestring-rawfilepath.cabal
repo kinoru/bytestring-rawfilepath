@@ -1,30 +1,23 @@
 name:                bytestring-rawfilepath
 version:             0.1.0.0
-synopsis:            Initial project template from stack
+synopsis:            ByteString I/O with RawFilePath instead of FilePath
 description:         Please see README.md
-homepage:            https://github.com/githubuser/bytestring-rawfilepath#readme
+homepage:            https://github.com/kinoru/bytestring-rawfilepath#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2016 Author name here
-category:            Web
+author:              Kinoru
+maintainer:          xkinoru@gmail.com
+copyright:           2016 Kinoru
+category:            Data
 build-type:          Simple
--- extra-source-files:
 cabal-version:       >=1.10
+extra-source-files:
+  README.md
 
 library
   hs-source-dirs:      src
   exposed-modules:     Lib
   build-depends:       base >= 4.7 && < 5
-  default-language:    Haskell2010
-
-executable bytestring-rawfilepath-exe
-  hs-source-dirs:      app
-  main-is:             Main.hs
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
-  build-depends:       base
-                     , bytestring-rawfilepath
   default-language:    Haskell2010
 
 test-suite bytestring-rawfilepath-test
@@ -38,4 +31,4 @@ test-suite bytestring-rawfilepath-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/bytestring-rawfilepath
+  location: https://github.com/kinoru/bytestring-rawfilepath
